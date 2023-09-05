@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Postfolio Website - Jigna Sri</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/84cec935c7.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Logo.png" alt="logo" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="services">Certifications</a></li>
+                        <li><a href="portfolio">Portfolio</a></li>
+                        <li><a href="contact">Contact</a></li>
+                        <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm <span> Jigna Sri</span></h1>
+                    <p>My work in pixels.</p>
+                </div>
+            </div>
+        </div>
+        <!------------about--------------------->
+        <div id="about"> 
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="my-image.jpeg" alt="user">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p><br /></p>
+                        <p>I am a CS undergraduate with a foundation in Java, SQL, Cloud computing, Web development and Software testing. I have passion for all things tech and consider myself a curious and enthsuiastic developer. Besides coding, I enjoy reading, dancing, listening to music and playing an instrument. I love nature, pizza and art. As a lifelong learner, I'm always seeking new knowledge and experiences to broaden my perspective and enhance my skills.</p>
+                        <p>Thanks for taking the time to learn a little about me!</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('activities')">Accomplishments</p>
+                            <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                            <!--<p class="tab-links">Awards</p>
+                            <p class="tab-links">Hobbies</p>
+                            <p class="tab-links">Languages</p>
+                            <p class="tab-links">Interests</p>
+                            <p class="tab-links">References</p>--->
+                        </div>
+                        <div>
+                            <div class="tab-contents active-tab" id="education">
+                                <ul>
+                                    <li><span>2018-2022</span><br />B.E in Computer Science from Osmania University, Hyderabad</li>
+                                    <li><span>2016-2018</span><br />Intermediate from Narayana Junior College</li>
+                                    <li><span>2016</span><br />Secondary Schooling from NSM Public School(CBSE)</li>
+                                </ul>
+                            </div>
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <div class="row">
+        <div class="column" style="text-align: left">
+            <li><span>C | C++</span></li>
+            <p>Built Console Application</p>
+            <li><span>Java</span></li>
+            <p>App Development</p>
+            <li><span>HTML | CSS | JavaScript |  React</span></li>
+            <p>Web App Development</p>
+            <li><span>Python</span></li>
+            <p>Developed a generic model based<br />on Ensemble Learning to identify <br />and classify vehicles</p>
+        </div>
+        <div class="column" style="text-align: left" >
+            <li><span>SQL</span></li>
+            <p>Built Database management system</p>
+            <li><span>Software Testing</span></li>
+            <p>Application Testing</p>
+            <li><span>AWS</span></li>
+            <p>Cloud Computing</p>
+            <li><span>Data Structures</span></li>
+        </div>
+    </div>
+                            </ul>
+                        </div>
+                            <div class="tab-contents" id="activities">
+                                <ul>
+                                    <li><span>2020-2022</span><br />Vice President at the Matrusri Orators Club.</li>
+                                    <!--<li><span>2022</span><br />Secured First Place in the Urvi Flashmob Competition.</li>-->
+                                    <li><span>2021</span><br />Participated in MANTHAN Hackathon and presented our concept, "Identification of Crime Prone Areas," to the MIC platform.</li>
+                                  <!----  <li><span>2020</span><br />Bagged the top position in the Elocution competition titled "Sound Spirit.<br />My proficiency in written expression was acknowledged in 2018 when I won First Place in Essay Writing, a competition organized by the National Service Scheme (NSS).</li>-->
+                                    <li><span>2019</span><br />Built a "Library Management System" at an intership for our college library.</li>
+                                    <li><span>2018-2022</span><br />Active participant in various IEEE activities</li> 
+                                    <li><span>2016</span><br />Served as the Secretary of the English Club within the School Cabinet</li>
+                                    <!--<li><span>2019-2021</span><br />Team lead at StartApp LLC.</li>
+                                    <li><span>2017-2019</span><br />UI/UX Design Executive at Coin Digital Ltd.</li>
+                                    <li><span>2016-2017</span><br />Team lead at StartApp LLC.</li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------services--------------------->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Certifications</h1>
+                <div class="services-list">
+                    <div>
+                        <!--<img src="images/web-design.png" alt="web-design">-->
+                        <i class="fa-brands fa-aws"></i>
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p>Udemy | 2022</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-globe"></i>
+                        <h3>The Complete Web Development Bootcamp</h3>
+                        <p>Udemy | 2023</p>       
+                        <!--<a href="#" class="hero-btn">Read More</a>-->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-window-restore"></i>
+                        <h3>HTML, CSS, Excel Skills for Business</h3>
+                        <p>Coursera | 2020</p>
+                        <!--<a href="#" class="hero-btn">Read More</a>-->
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-code"></i>
+                        <h3>C, C++, JavaScript, SQL, R</h3>
+                        <p>Sololearn | 2020</p>
+                        <!--<a href="#" class="hero-btn">Read More</a>-->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-rectangle-ad"></i>
+                        <h3>Digital Marketing</h3>
+                        <p>Google Digital Garage | 2020</p>
+                        <!--<a href="#" class="hero-btn">Read More</a>-->
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-circle-nodes"></i>
+                        <h3>IT Essentials, Introduction to Networks, Cybersecurity Essentials</h3>
+                        <p>Cisco Networking Academy | 2019</p>
+                        <!--<a href="#" class="hero-btn">Read More</a>-->
+                </div>
+            </div>
+        </div>
+        <!------------portfolio--------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="traffic.jpeg" alt="work-1">
+                        <div class="layer">
+                            <h3>An Ensemble Deep Learning Method for Vehicle Type Classification on Visual Traffic Surveillance Sensors</h3>
+                            <p><i>Deep Learning</i></p>
+                            <p>Python</p>
+                            <a href="Trafficsurveillance.html" class="hero-btn"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="houserental.png" alt="work-2">
+                        <div class="layer">
+                            <h3>Online House Rental System</h3>
+                            <p><i>Web App</i></p>
+                            <p>HTML | CSS | JavaScript | MySQL</p>
+                            <a href="#" class="hero-btn"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="cartoonpicture.jpg" alt="work-3">
+                        <div class="layer">
+                            <h3>Cartoonify An Image</h3>
+                            <p><i>Image Processing Application</i></p>
+                            <p>OPEN CV Python</p>
+                            <a href="#" class="hero-btn"><i class="fa-solid fa-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">View More</a>
+            </div>
+        </div>
+        <!------------contact--------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><br /><i>Feel free to get in touch!</i></p>
+                    <div class="contact-child">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Enter your name" class="field" required>
+                            <input type="email" name="Email" placeholder="Enter your email" class="field" required>
+                            <textarea placeholder="Message" name="Message" rows="6" class="field"></textarea>
+                            <button class="hero-btn btn2" type="Submit">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                    <div class="contact-child">
+                        <!--<p><i class="fa-solid fa-map-marker"></i>Hyderabad, India</p>
+                        <p><i class="fa-solid fa-envelope"></i>jigna.adicharla@gmail.com</p>
+                        <p><i class="fa-solid fa-paper-plane"></i></p>
+                        <p><i class="fa-solid fa-phone"></i>+91 9381845307</p>-->
+                        <div class="social-icons">
+                        <a href="https://linkedin.com/in/jigna-adicharla" class="hero-btn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jnas7102" class="hero-btn"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:jigna.adicharla@gmail.com" class="hero-btn"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                    <a href="Adicharla_JignaSri_23Resume.pdf" download class="hero-btn btn2">Download Resume</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p> Copyright &copy; 2021 Jigna Sri. All rights reserved.</p>
+                <p>Made with <i class="fa-regular fa-heart"></i> </p>
+            </div>
+        </div>
+        <script>
+            var tabcontents, tablinks;
+                tabcontents = document.getElementsByClassName("tab-contents");
+                tablinks = document.getElementsByClassName("tab-links");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemenu;
+            sidemenu = document.getElementById("sidemenu");
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyJyBMsEWXlGRPEnx3igOwc6PxEDDALsE29S8ptCU3Qe_YhY6jcQH490o_40ZYWCTLL9w/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById('msg')
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML="Message Sent Successfully!"
+                    setTimeout(function(){msg.innerHTML=""},3000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+    </body>
+</html>
